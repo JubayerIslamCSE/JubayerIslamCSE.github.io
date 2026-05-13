@@ -33,6 +33,14 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
+/* Header shadow on scroll */
+const siteHeader = document.querySelector(".site-header");
+if (siteHeader) {
+  window.addEventListener("scroll", () => {
+    siteHeader.classList.toggle("scrolled", window.scrollY > 12);
+  });
+}
+
 /* ProFTPD slider */
 const slider = document.querySelector("[data-slider]");
 
