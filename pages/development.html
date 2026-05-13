@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Development | Md Jubayer Islam</title>
+  <link rel="icon" type="image/png" href="../assets/screenshots/mainIcon.png" />
+  <link rel="apple-touch-icon" href="../assets/screenshots/mainIcon.png" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="dev-theme dev-ide page-anim">
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="../index.html" class="logo">
+        <img src="../assets/screenshots/mainIcon.png" alt="Jubayer logo" />
+        <span>Jubayer</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+        <li><a href="uiux.html">UI/UX</a></li>
+        <li><a class="active" href="development.html">Development</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero hero-dev dev-hero-ide">
+      <div class="hero-copy">
+        <div class="pill dev-pill anim-fade-up" style="--d:0ms">
+          <span class="dev-pill-dot"></span> <code>~/portfolio</code> · main · clean
+        </div>
+
+        <h1 class="dev-headline anim-fade-up" style="--d:80ms">
+          Writing code with <span class="dev-grad">intent</span>,
+          <br/>shipping with <span class="dev-grad-2">craft</span>.
+        </h1>
+
+        <p class="anim-fade-up" style="--d:160ms">
+          Front-end fundamentals, scripting, and small systems work.
+          I focus on readable code, sensible structure, and projects
+          I can actually maintain and extend.
+        </p>
+
+        <div class="hero-actions anim-fade-up" style="--d:240ms">
+          <a href="#dev-projects" class="btn dev-cta">
+            <span class="cli-prompt">$</span> run projects
+          </a>
+          <a href="#stack" class="btn dev-cta-ghost">
+            <span class="cli-prompt">$</span> show --stack
+          </a>
+        </div>
+
+        <div class="dev-stat-row anim-fade-up" style="--d:320ms">
+          <div class="dev-stat"><strong>6</strong><span>Languages</span></div>
+          <div class="dev-stat"><strong>5+</strong><span>Live Projects</span></div>
+          <div class="dev-stat"><strong>250+</strong><span>Commits this year</span></div>
+        </div>
+      </div>
+
+      <div class="dev-editor anim-fade-up" style="--d:400ms">
+        <div class="editor-chrome">
+          <div class="editor-traffic">
+            <span class="t red"></span><span class="t yellow"></span><span class="t green"></span>
+          </div>
+          <div class="editor-tabs">
+            <span class="editor-tab active">portfolio.js</span>
+            <span class="editor-tab">style.css</span>
+            <span class="editor-tab">README.md</span>
+          </div>
+          <div class="editor-meta"><span class="branch">⎇ main</span></div>
+        </div>
+
+        <div class="editor-body">
+          <div class="editor-files">
+            <div class="ef-row ef-folder">▾ portfolio</div>
+            <div class="ef-row ef-folder indent">▾ src</div>
+            <div class="ef-row ef-file indent2 active"><i class="dot js"></i>portfolio.js</div>
+            <div class="ef-row ef-file indent2"><i class="dot css"></i>style.css</div>
+            <div class="ef-row ef-file indent2"><i class="dot html"></i>index.html</div>
+            <div class="ef-row ef-folder indent">▸ pages</div>
+            <div class="ef-row ef-folder indent">▸ assets</div>
+            <div class="ef-row ef-file"><i class="dot md"></i>README.md</div>
+            <div class="ef-row ef-file"><i class="dot json"></i>package.json</div>
+          </div>
+
+          <div class="editor-code">
+            <pre><code><span class="ln">1</span> <span class="tk-kw">const</span> <span class="tk-var">developer</span> = {
+<span class="ln">2</span>   <span class="tk-prop">name</span>: <span class="tk-str">"Md Jubayer Islam"</span>,
+<span class="ln">3</span>   <span class="tk-prop">role</span>: <span class="tk-str">"CSE Student · Builder"</span>,
+<span class="ln">4</span>   <span class="tk-prop">stack</span>: [<span class="tk-str">"HTML"</span>, <span class="tk-str">"CSS"</span>, <span class="tk-str">"JavaScript"</span>,
+<span class="ln">5</span>            <span class="tk-str">"Python"</span>, <span class="tk-str">"Java"</span>, <span class="tk-str">"C/C++"</span>],
+<span class="ln">6</span>   <span class="tk-prop">currentlyBuilding</span>: <span class="tk-str">"this portfolio"</span>,
+<span class="ln">7</span>   <span class="tk-prop">currentlyLearning</span>: [<span class="tk-str">"Linux CLI"</span>, <span class="tk-str">"Git workflows"</span>],
+<span class="ln">8</span>   <span class="tk-prop">codeStyle</span>: <span class="tk-str">"readable &gt; clever"</span>,
+<span class="ln">9</span> };
+<span class="ln">10</span>
+<span class="ln">11</span> <span class="tk-kw">function</span> <span class="tk-fn">ship</span>(<span class="tk-var">project</span>) {
+<span class="ln">12</span>   <span class="tk-kw">return</span> <span class="tk-var">project</span>
+<span class="ln">13</span>     .<span class="tk-fn">plan</span>()
+<span class="ln">14</span>     .<span class="tk-fn">build</span>()
+<span class="ln">15</span>     .<span class="tk-fn">test</span>()
+<span class="ln">16</span>     .<span class="tk-fn">document</span>()
+<span class="ln">17</span>     .<span class="tk-fn">deploy</span>();
+<span class="ln">18</span> }
+<span class="ln">19</span>
+<span class="ln">20</span> <span class="tk-com">// status: open to internships</span>
+<span class="ln">21</span> <span class="tk-kw">export</span> <span class="tk-kw">default</span> <span class="tk-var">developer</span>;<span class="cursor">|</span></code></pre>
+          </div>
+        </div>
+
+        <div class="editor-statusbar">
+          <span>⎇ main</span>
+          <span>● 0 errors</span>
+          <span>UTF-8</span>
+          <span>JavaScript</span>
+          <span class="status-right">Ln 21, Col 35</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="section-heading">
+        <span>Stack</span>
+        <h2>Languages &amp; tools I use.</h2>
+        <p>Practical front-end, scripting, and base systems knowledge.</p>
+      </div>
+
+      <div class="dev-stack-grid">
+        <div class="dev-lang lang-js"><strong>JavaScript</strong><span>Front-end logic, DOM, ES6+</span></div>
+        <div class="dev-lang lang-html"><strong>HTML5</strong><span>Semantic structure</span></div>
+        <div class="dev-lang lang-css"><strong>CSS3</strong><span>Layout · Grid · Animations</span></div>
+        <div class="dev-lang lang-py"><strong>Python</strong><span>Scripting · automation</span></div>
+        <div class="dev-lang lang-java"><strong>Java</strong><span>OOP foundations</span></div>
+        <div class="dev-lang lang-cpp"><strong>C / C++</strong><span>Data structures · CS basics</span></div>
+        <div class="dev-lang lang-git"><strong>Git &amp; GitHub</strong><span>Versioning · branching</span></div>
+        <div class="dev-lang lang-linux"><strong>Linux CLI</strong><span>Shell · file system · pipes</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span>Activity</span>
+        <h2>Consistent, not flashy.</h2>
+        <p>Snapshot of how I've been building this year.</p>
+      </div>
+
+      <div class="dev-activity">
+        <div class="activity-heatmap" aria-label="Contribution activity heatmap">
+          <!-- 7 rows x 26 cols -->
+          <!-- generated cells -->
+        </div>
+        <div class="activity-legend">
+          <span>Less</span>
+          <i class="lvl lvl-0"></i><i class="lvl lvl-1"></i><i class="lvl lvl-2"></i><i class="lvl lvl-3"></i><i class="lvl lvl-4"></i>
+          <span>More</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dev-projects">
+      <div class="section-heading">
+        <span>Projects</span>
+        <h2>Things I've built.</h2>
+        <p>Open-source repos &amp; small projects from my learning journey.</p>
+      </div>
+
+      <div class="dev-repo-grid">
+
+        <article class="dev-repo">
+          <div class="dev-repo-head">
+            <div class="dev-repo-name"><span class="repo-icon">⌥</span> JubayerIslamCSE / <strong>portfolio</strong></div>
+            <span class="dev-repo-vis">Public</span>
+          </div>
+          <p>Personal portfolio built with vanilla HTML, CSS, and JavaScript — multi-section site covering cyber, design, and dev work.</p>
+          <div class="dev-repo-foot">
+            <span class="lang-dot js-d"></span> JavaScript
+            <span class="repo-stat">★ 0</span>
+            <span class="repo-stat">⑂ 0</span>
+            <span class="repo-stat updated">Updated recently</span>
+          </div>
+        </article>
+
+        <article class="dev-repo featured-repo">
+          <div class="dev-repo-head">
+            <div class="dev-repo-name"><span class="repo-icon">⌥</span> JubayerIslamCSE / <strong>cyber-labs</strong></div>
+            <span class="dev-repo-vis">Public</span>
+          </div>
+          <p>Lab notes, scripts, and case studies from my cybersecurity training — recon, password security, and service enumeration.</p>
+          <div class="dev-repo-foot">
+            <span class="lang-dot py-d"></span> Python
+            <span class="repo-stat">★ 0</span>
+            <span class="repo-stat">⑂ 0</span>
+            <span class="repo-stat updated">Updated this month</span>
+          </div>
+        </article>
+
+        <article class="dev-repo">
+          <div class="dev-repo-head">
+            <div class="dev-repo-name"><span class="repo-icon">⌥</span> JubayerIslamCSE / <strong>js-mini-projects</strong></div>
+            <span class="dev-repo-vis">Public</span>
+          </div>
+          <p>Small focused projects — to-do, calculator, weather widget, quote generator — practice in vanilla JavaScript &amp; DOM.</p>
+          <div class="dev-repo-foot">
+            <span class="lang-dot js-d"></span> JavaScript
+            <span class="repo-stat">★ 0</span>
+            <span class="repo-stat">⑂ 0</span>
+            <span class="repo-stat updated">Updated weekly</span>
+          </div>
+        </article>
+
+        <article class="dev-repo">
+          <div class="dev-repo-head">
+            <div class="dev-repo-name"><span class="repo-icon">⌥</span> JubayerIslamCSE / <strong>cs-foundations</strong></div>
+            <span class="dev-repo-vis">Public</span>
+          </div>
+          <p>University coursework, data-structure exercises, and small C/C++ &amp; Java programs — the long, slow part of getting better.</p>
+          <div class="dev-repo-foot">
+            <span class="lang-dot cpp-d"></span> C++
+            <span class="repo-stat">★ 0</span>
+            <span class="repo-stat">⑂ 0</span>
+            <span class="repo-stat updated">Updated regularly</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span>Git Log</span>
+        <h2>My recent commits (in spirit).</h2>
+      </div>
+
+      <div class="git-log-card">
+        <div class="git-row">
+          <span class="git-sha">a3f12d</span>
+          <span class="git-msg">feat(blog): expand blog with travel + training posts</span>
+          <span class="git-date">today</span>
+        </div>
+        <div class="git-row">
+          <span class="git-sha">7b1c09</span>
+          <span class="git-msg">refactor(uiux): rebuild design page with 3D mockups</span>
+          <span class="git-date">today</span>
+        </div>
+        <div class="git-row">
+          <span class="git-sha">4e2af8</span>
+          <span class="git-msg">style(cyber): apply hacker terminal theme</span>
+          <span class="git-date">yesterday</span>
+        </div>
+        <div class="git-row">
+          <span class="git-sha">d9c310</span>
+          <span class="git-msg">feat(home): add now-learning widget + CV button</span>
+          <span class="git-date">this week</span>
+        </div>
+        <div class="git-row">
+          <span class="git-sha">1ff552</span>
+          <span class="git-msg">chore: add favicon links across all pages</span>
+          <span class="git-date">this week</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-note">
+    © 2025 Md Jubayer Islam. <code>git push origin main</code>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

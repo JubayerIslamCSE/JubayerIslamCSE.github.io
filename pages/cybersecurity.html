@@ -4,326 +4,320 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cybersecurity | Md Jubayer Islam</title>
+  <link rel="icon" type="image/png" href="../assets/screenshots/mainIcon.png" />
+  <link rel="apple-touch-icon" href="../assets/screenshots/mainIcon.png" />
   <link rel="stylesheet" href="../style.css" />
 </head>
-<body>
+<body class="cyber-theme cyber-hacker">
+
+  <div class="matrix-bg" aria-hidden="true">
+    <div class="matrix-col" style="--i:0">10110100<br>01001011<br>11001010<br>00110110<br>10101011<br>SYS_OK<br>01101001<br>11010011</div>
+    <div class="matrix-col" style="--i:1">root@kali<br>nmap -sV<br>scanning..<br>0x4f3a<br>10101011<br>01001100<br>SUDO<br>0xdeadbeef</div>
+    <div class="matrix-col" style="--i:2">[+] AUTH<br>11001011<br>00110110<br>FIREWALL<br>tcp/22<br>tcp/80<br>tcp/443<br>00010101</div>
+    <div class="matrix-col" style="--i:3">10110100<br>0xCAFE<br>HANDSHAKE<br>SYN<br>SYN+ACK<br>ACK<br>RST<br>PSH</div>
+    <div class="matrix-col" style="--i:4">PACKET<br>ANALYZE<br>0x1f2e<br>10101010<br>01010101<br>BLUE_TEAM<br>0x9000<br>HASH_OK</div>
+    <div class="matrix-col" style="--i:5">root@box<br>chmod 700<br>iptables<br>DROP<br>ALLOW<br>22/tcp<br>SSH<br>0x4a</div>
+    <div class="matrix-col" style="--i:6">PORT<br>SCAN<br>OPEN<br>FILTERED<br>CLOSED<br>STEALTH<br>0xff00<br>RECON</div>
+    <div class="matrix-col" style="--i:7">SHA256<br>MD5<br>BCRYPT<br>SALT<br>HMAC<br>RSA<br>AES<br>TLS1.3</div>
+  </div>
 
   <header class="site-header">
     <nav class="navbar">
       <a href="../index.html" class="logo">
-        <img src="../assets/screenshots/mainIcon.png" alt="Jubayer logo">
+        <img src="../assets/screenshots/mainIcon.png" alt="Jubayer logo" />
         <span>Jubayer</span>
       </a>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="../index.html">Home</a></li>
         <li><a class="active" href="cybersecurity.html">Cybersecurity</a></li>
-        <li><a href="#">UI/UX</a></li>
-        <li><a href="#">Development</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="uiux.html">UI/UX</a></li>
+        <li><a href="development.html">Development</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <section class="cyber-hero-new">
-      <div class="cyber-copy">
-        <div class="pill">Cybersecurity Portfolio</div>
+    <section class="hero hero-cyber">
+      <div class="hero-copy">
+        <div class="pill cyber-pill">
+          <span class="dot-blink"></span> SECURE_SHELL // PORTFOLIO
+        </div>
 
-        <h1>Learning how systems break — and how to defend them.</h1>
+        <h1>
+          <span class="glitch" data-text="Break it.">Break it.</span>
+          <span class="glitch alt" data-text="Defend it.">Defend it.</span>
+          <span class="cyber-accent">Document it.</span>
+        </h1>
 
         <p>
-          My cybersecurity journey is built around safe lab practice, vulnerability assessment,
-          service enumeration, packet analysis, and clear security documentation.
+          Cybersecurity trainee learning how systems are attacked — and how to
+          harden them. Vulnerability assessment, service enumeration,
+          packet analysis, and case-study documentation, all in safe,
+          authorized lab environments.
         </p>
 
         <div class="hero-actions">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#modules" class="btn ghost">Explore Skills</a>
+          <a href="#projects" class="btn btn-primary cyber-btn">$ run ./projects</a>
+          <a href="#skills" class="btn btn-secondary cyber-btn-ghost">$ list --skills</a>
+        </div>
+
+        <div class="team-badges">
+          <div class="team-badge red"><span>[ RED TEAM ]</span> Offensive Recon</div>
+          <div class="team-badge blue"><span>[ BLUE TEAM ]</span> Defensive Posture</div>
         </div>
       </div>
 
-      <div class="cyber-profile-modern">
-        <div class="profile-top">
-          <img src="../assets/screenshots/myCover2.jpg" alt="Cybersecurity profile cover">
+      <div class="terminal-card">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="terminal-title">jubayer@kali ~ /portfolio</span>
         </div>
+        <pre class="terminal-body">
+<span class="t-muted">$</span> <span class="t-cmd">whoami</span>
+<span class="t-out">md_jubayer_islam</span>
 
-        <div class="profile-main">
-          <img class="profile-pic" src="../assets/screenshots/myPicBig.jpg" alt="Md Jubayer Islam">
+<span class="t-muted">$</span> <span class="t-cmd">cat ./profile.json</span>
+<span class="t-key">{</span>
+  <span class="t-prop">"alias"</span>:    <span class="t-str">"cyber_trainee"</span>,
+  <span class="t-prop">"location"</span>: <span class="t-str">"Dhaka, BD"</span>,
+  <span class="t-prop">"focus"</span>:    <span class="t-str">"VA, recon, packet_analysis"</span>,
+  <span class="t-prop">"toolkit"</span>:  <span class="t-arr">[</span><span class="t-str">"nmap"</span>, <span class="t-str">"hydra"</span>, <span class="t-str">"wireshark"</span>, <span class="t-str">"metasploit"</span><span class="t-arr">]</span>,
+  <span class="t-prop">"status"</span>:   <span class="t-str">"available_for_internship"</span>
+<span class="t-key">}</span>
 
-          <div>
-            <h2>Md Jubayer Islam</h2>
-            <p>Cyber Security Trainee · CSE Student</p>
-          </div>
+<span class="t-muted">$</span> <span class="t-cmd">sudo ./engage --safe-mode</span>
+<span class="t-ok">[+] authorized lab environment loaded</span>
+<span class="t-ok">[+] ethics_check ............ <span class="t-pass">PASS</span></span>
+<span class="t-ok">[+] documentation_layer ..... <span class="t-pass">ACTIVE</span></span>
+<span class="t-muted">$</span> <span class="t-cmd typing">_</span>
+        </pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="stats-grid cyber-stats">
+        <div class="stat-box hex-stat">
+          <h3>8+</h3>
+          <p>Security Tools</p>
         </div>
-
-        <div class="profile-details">
-          <div>
-            <span>Location</span>
-            <strong>Dhaka, Bangladesh</strong>
-          </div>
-
-          <div>
-            <span>Focus</span>
-            <strong>Vulnerability Assessment</strong>
-          </div>
-
-          <div>
-            <span>Status</span>
-            <strong>Open to Internship</strong>
-          </div>
+        <div class="stat-box hex-stat">
+          <h3>3+</h3>
+          <p>Lab Projects</p>
+        </div>
+        <div class="stat-box hex-stat">
+          <h3>5+</h3>
+          <p>Security Areas</p>
+        </div>
+        <div class="stat-box hex-stat">
+          <h3>100%</h3>
+          <p>Authorized Practice</p>
         </div>
       </div>
     </section>
 
-    <section class="section stats-row">
-      <div class="clean-stat">
-        <h3>8+</h3>
-        <p>Security Tools</p>
-      </div>
-
-      <div class="clean-stat">
-        <h3>3+</h3>
-        <p>Lab Projects</p>
-      </div>
-
-      <div class="clean-stat">
-        <h3>5+</h3>
-        <p>Security Areas</p>
-      </div>
-
-      <div class="clean-stat">
-        <h3>100%</h3>
-        <p>Authorized Practice</p>
-      </div>
-    </section>
-
-    <section class="section" id="modules">
+    <section class="section" id="skills">
       <div class="section-heading">
-        <span>Security Modules</span>
-        <h2>What I’m practicing.</h2>
+        <span>// security_skills</span>
+        <h2>What I'm practicing.</h2>
+        <p>Hands-on lab work, not theory dumps.</p>
       </div>
 
-      <div class="module-grid-new">
-        <article class="module-card-new">
-          <span>01</span>
+      <div class="card-grid three-col">
+        <article class="soft-card cyber-card">
+          <div class="cyber-card-tag">[+] recon</div>
           <h3>Network Scanning</h3>
-          <p>Finding active hosts, open ports, services, and exposed areas inside a controlled lab.</p>
+          <p>Host discovery, port sweeps, service banners, and surface-area mapping in controlled labs.</p>
+          <div class="cyber-card-foot">nmap · masscan · arp-scan</div>
         </article>
 
-        <article class="module-card-new">
-          <span>02</span>
+        <article class="soft-card cyber-card">
+          <div class="cyber-card-tag">[+] enum</div>
           <h3>Service Enumeration</h3>
-          <p>Reviewing service versions and understanding how outdated services create risk.</p>
+          <p>Version fingerprinting and understanding how outdated services expose real risk.</p>
+          <div class="cyber-card-foot">nmap -sV · enum4linux</div>
         </article>
 
-        <article class="module-card-new">
-          <span>03</span>
+        <article class="soft-card cyber-card">
+          <div class="cyber-card-tag">[+] auth</div>
           <h3>Password Security</h3>
-          <p>Understanding weak credential risk, authentication testing concepts, and prevention methods.</p>
+          <p>Credential strength, authentication testing concepts, and prevention with rate limiting & MFA.</p>
+          <div class="cyber-card-foot">hydra · john · hashcat</div>
         </article>
 
-        <article class="module-card-new">
-          <span>04</span>
+        <article class="soft-card cyber-card">
+          <div class="cyber-card-tag">[+] traffic</div>
           <h3>Packet Analysis</h3>
-          <p>Capturing and reviewing traffic to understand protocols, behavior, and suspicious patterns.</p>
+          <p>Reading protocol-level traffic, spotting suspicious patterns, and tracing handshakes.</p>
+          <div class="cyber-card-foot">wireshark · tcpdump · tshark</div>
         </article>
 
-        <article class="module-card-new">
-          <span>05</span>
+        <article class="soft-card cyber-card">
+          <div class="cyber-card-tag">[+] va</div>
           <h3>Vulnerability Assessment</h3>
-          <p>Using tools to identify issues, document findings, and suggest realistic mitigations.</p>
+          <p>Scanning, triaging findings, and recommending mitigations with clear severity context.</p>
+          <div class="cyber-card-foot">nessus · openvas · nikto</div>
         </article>
 
-        <article class="module-card-new">
-          <span>06</span>
-          <h3>Web Security Basics</h3>
-          <p>Learning common web risks through DVWA-style labs and secure coding awareness.</p>
+        <article class="soft-card cyber-card">
+          <div class="cyber-card-tag">[+] docs</div>
+          <h3>Security Documentation</h3>
+          <p>Turning lab work into case studies: objective → process → findings → remediation.</p>
+          <div class="cyber-card-foot">markdown · screenshots · timelines</div>
         </article>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading">
-        <span>Toolkit</span>
-        <h2>Tools I use in labs.</h2>
+        <span>// toolkit</span>
+        <h2>$ which &lt;tool&gt;</h2>
       </div>
 
-      <div class="tool-cloud">
-        <span>Nmap</span>
-        <span>Hydra</span>
-        <span>Wireshark</span>
-        <span>Metasploit</span>
-        <span>Nessus</span>
-        <span>OpenVAS</span>
-        <span>Nikto</span>
-        <span>VMware</span>
-        <span>Kali Linux</span>
-        <span>Linux CLI</span>
+      <div class="cyber-toolkit">
+        <span class="cyber-chip">nmap</span>
+        <span class="cyber-chip">hydra</span>
+        <span class="cyber-chip">wireshark</span>
+        <span class="cyber-chip">metasploit</span>
+        <span class="cyber-chip">nessus</span>
+        <span class="cyber-chip">openvas</span>
+        <span class="cyber-chip">nikto</span>
+        <span class="cyber-chip">vmware</span>
+        <span class="cyber-chip">kali linux</span>
+        <span class="cyber-chip">linux cli</span>
+        <span class="cyber-chip">burp suite</span>
+        <span class="cyber-chip">john the ripper</span>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading">
-        <span>Learning Path</span>
-        <h2>How I’m building my cybersecurity foundation.</h2>
+        <span>// kill_chain</span>
+        <h2>How my cybersecurity journey is growing.</h2>
+        <p>From curiosity to documented case studies — step by step.</p>
       </div>
 
-      <div class="clean-timeline">
-        <div class="timeline-block">
-          <span>01</span>
-          <div>
-            <h3>Curiosity</h3>
-            <p>I became interested in how systems work, how attackers think, and how defenders protect users.</p>
-          </div>
+      <div class="kill-chain">
+        <div class="chain-node">
+          <div class="hex-num">01</div>
+          <h3>Curiosity</h3>
+          <p>How do systems get owned, and how do defenders stay ahead? That question started everything.</p>
         </div>
+        <div class="chain-arrow">→</div>
 
-        <div class="timeline-block">
-          <span>02</span>
-          <div>
-            <h3>Virtual Labs</h3>
-            <p>I built safe VMware-based environments using attacker and target machines.</p>
-          </div>
+        <div class="chain-node">
+          <div class="hex-num">02</div>
+          <h3>Virtual Labs</h3>
+          <p>Built isolated VMware environments with attacker + target machines. No prod systems, ever.</p>
         </div>
+        <div class="chain-arrow">→</div>
 
-        <div class="timeline-block">
-          <span>03</span>
-          <div>
-            <h3>Security Tools</h3>
-            <p>I practiced with Nmap, Hydra, Wireshark, Nessus/OpenVAS, Metasploit, and Nikto.</p>
-          </div>
+        <div class="chain-node">
+          <div class="hex-num">03</div>
+          <h3>Security Tools</h3>
+          <p>Hands-on practice with nmap, hydra, wireshark, nessus/openvas, metasploit, and nikto.</p>
         </div>
+        <div class="chain-arrow">→</div>
 
-        <div class="timeline-block">
-          <span>04</span>
-          <div>
-            <h3>Documentation</h3>
-            <p>I started turning lab work into case studies with findings, impact, and mitigation.</p>
-          </div>
+        <div class="chain-node">
+          <div class="hex-num">04</div>
+          <h3>Documentation</h3>
+          <p>Practical lab work, written up as case studies with findings, mitigations, and lessons learned.</p>
         </div>
       </div>
     </section>
 
     <section class="section" id="projects">
       <div class="section-heading">
-        <span>Case Studies</span>
+        <span>// case_studies</span>
         <h2>Cybersecurity projects.</h2>
+        <p>Lab-based, authorized, and fully documented.</p>
       </div>
 
-      <div class="project-showcase-grid">
-        <article class="project-showcase-card">
-          <img src="../assets/screenshots/myCover1.jpg" alt="Hydra lab cover">
-
-          <div class="project-content">
+      <div class="project-grid">
+        <article class="project-card cyber-project">
+          <img src="../assets/screenshots/myCover1.jpg" alt="Hydra project cover" />
+          <div class="cyber-status">● ACTIVE</div>
+          <div class="project-body">
             <div class="project-meta">
-              <span>Case Study</span>
-              <span>Lab</span>
+              <span>CASE_STUDY</span>
+              <span>LAB</span>
             </div>
-
             <h3>Hydra Password Auditing Lab</h3>
-
             <p>
-              A controlled lab focused on weak credential risk, SSH/FTP authentication testing concepts,
-              and defensive controls.
+              Controlled lab on weak credential risk, authentication testing
+              concepts, and defensive best practices for password security.
             </p>
-
             <div class="mini-tags">
-              <span>Hydra</span>
-              <span>SSH/FTP</span>
-              <span>Password Security</span>
+              <span>hydra</span>
+              <span>ssh/ftp</span>
+              <span>auth</span>
             </div>
-
-            <a href="../projects/hydra-password-auditing.html">View Case Study →</a>
+            <a href="../projects/hydra-password-auditing.html">$ open case-study →</a>
           </div>
         </article>
 
-        <article class="project-showcase-card featured">
-          <img src="../assets/screenshots/proftpd-1.png" alt="ProFTPD lab screenshot">
-
-          <div class="project-content">
+        <article class="project-card cyber-project featured-cyber">
+          <img src="../assets/screenshots/proftpd-cover.png" alt="ProFTPD cover" />
+          <div class="cyber-status">★ FEATURED</div>
+          <div class="project-body">
             <div class="project-meta">
-              <span>Featured</span>
-              <span>Lab</span>
+              <span>FEATURED</span>
+              <span>LAB</span>
             </div>
-
             <h3>ProFTPD Exploitation Lab</h3>
-
             <p>
-              A lab-based case study covering service enumeration, vulnerable FTP service analysis,
-              controlled exploitation concepts, and mitigation.
+              End-to-end case study: service enumeration, vulnerable FTP
+              analysis, controlled exploitation concepts, and mitigation.
             </p>
-
             <div class="mini-tags">
-              <span>Nmap</span>
-              <span>Metasploit</span>
-              <span>ProFTPD</span>
+              <span>nmap</span>
+              <span>metasploit</span>
+              <span>proftpd</span>
             </div>
-
-            <a href="../projects/proftpd-exploitation-lab.html">View Case Study →</a>
+            <a href="../projects/proftpd-exploitation-lab.html">$ open case-study →</a>
           </div>
         </article>
 
-        <article class="project-showcase-card">
-          <img src="../assets/screenshots/myCover3.jpg" alt="DVWA lab cover">
-
-          <div class="project-content">
+        <article class="project-card cyber-project">
+          <img src="../assets/screenshots/myCover3.jpg" alt="DVWA cover" />
+          <div class="cyber-status pending">… QUEUED</div>
+          <div class="project-body">
             <div class="project-meta">
-              <span>Coming Soon</span>
-              <span>Web Security</span>
+              <span>COMING_SOON</span>
+              <span>WEB</span>
             </div>
-
             <h3>DVWA Web Security Lab</h3>
-
             <p>
-              Coming soon: OWASP-style web app testing, vulnerability notes, screenshots,
-              and secure coding lessons.
+              Upcoming case study for web application security testing,
+              OWASP-style vulnerability classes, and remediation notes.
             </p>
-
             <div class="mini-tags">
-              <span>DVWA</span>
-              <span>OWASP</span>
-              <span>Web App</span>
+              <span>dvwa</span>
+              <span>owasp</span>
+              <span>web</span>
             </div>
-
-            <a href="#">Coming Soon →</a>
+            <a href="#">$ status pending →</a>
           </div>
         </article>
       </div>
     </section>
 
     <section class="section">
-      <div class="section-heading">
-        <span>Evidence</span>
-        <h2>Lab screenshots.</h2>
-      </div>
-
-      <div class="screenshot-grid-modern">
-        <article>
-          <img src="../assets/screenshots/proftpd-1.png" alt="ProFTPD screenshot one">
-          <p>Searching and identifying the relevant ProFTPD lab module.</p>
-        </article>
-
-        <article>
-          <img src="../assets/screenshots/proftpd-2.png" alt="ProFTPD screenshot two">
-          <p>Reviewing module options and target configuration inside the lab.</p>
-        </article>
-
-        <article>
-          <img src="../assets/screenshots/proftpd-3.png" alt="ProFTPD screenshot three">
-          <p>Controlled lab result and verification stage.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="ethical-box">
-        <h3>Ethical Practice</h3>
+      <div class="notice-banner cyber-banner">
+        <div class="banner-tag">WARNING:</div>
+        <h3>Ethical Practice Only</h3>
         <p>
-          All cybersecurity projects shown here are based on authorized, controlled lab environments for learning,
-          documentation, risk understanding, and defensive improvement.
+          Every project here is performed inside authorized, isolated lab
+          environments for learning, documentation, and defensive
+          improvement. No unauthorized targets. No production systems.
+          No exceptions.
         </p>
       </div>
     </section>
@@ -331,7 +325,7 @@
   </main>
 
   <footer class="footer-note">
-    © 2025 Md Jubayer Islam. Built with HTML, CSS, and JavaScript.
+    © 2025 Md Jubayer Islam · <span class="t-pass">secured.</span> documented. shared.
   </footer>
 
   <script src="../script.js"></script>

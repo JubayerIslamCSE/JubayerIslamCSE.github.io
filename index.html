@@ -4,100 +4,179 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Md Jubayer Islam | Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/screenshots/mainIcon.png" />
+  <link rel="apple-touch-icon" href="assets/screenshots/mainIcon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="home-theme page-anim">
 
   <header class="site-header">
     <nav class="navbar">
       <a href="index.html" class="logo">
-        <img src="assets/screenshots/mainIcon.png" alt="Jubayer logo">
+        <img src="assets/screenshots/mainIcon.png" alt="Jubayer logo" />
         <span>Jubayer</span>
       </a>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
 
       <ul class="nav-links" id="navLinks">
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="pages/cybersecurity.html">Cybersecurity</a></li>
-        <li><a href="#">UI/UX</a></li>
-        <li><a href="#">Development</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="pages/uiux.html">UI/UX</a></li>
+        <li><a href="pages/development.html">Development</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <section class="home-hero">
+    <section class="hero hero-home">
       <div class="hero-copy">
-        <div class="pill">CSE Student · Cyber Security Trainee · Designer</div>
+        <div class="pill anim-fade-up" style="--d:0ms">CSE Student · Cyber Security Trainee · Designer</div>
 
-        <h1>Designing, building, and securing digital experiences.</h1>
+        <h1 class="anim-fade-up" style="--d:80ms">Building, designing, and securing digital experiences.</h1>
 
-        <p>
-          I’m Md Jubayer Islam, a CSE student from Dhaka. I explore cybersecurity through safe labs,
-          build front-end projects, and design clean digital experiences.
+        <p class="anim-fade-up" style="--d:160ms">
+          Hi, I'm Md Jubayer Islam. I'm a Computer Science and Engineering student from Dhaka,
+          exploring cybersecurity through safe labs while also building front-end projects
+          and designing clean digital experiences.
         </p>
 
-        <div class="hero-actions">
-          <a href="pages/cybersecurity.html" class="btn primary">Explore Cybersecurity</a>
-          <a href="#journey" class="btn ghost">See My Journey</a>
+        <div class="hero-actions anim-fade-up" style="--d:240ms">
+          <a href="pages/cybersecurity.html" class="btn btn-primary">Explore Cybersecurity</a>
+          <a href="#journey" class="btn btn-secondary">See My Journey</a>
+          <a href="assets/Resume.pdf" download class="btn btn-cv" aria-label="Download Resume PDF">
+            <span class="cv-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m6 11 6 6 6-6"/><path d="M5 21h14"/></svg>
+            </span>
+            Download CV
+          </a>
+        </div>
+
+        <div class="now-widget anim-fade-up" style="--d:320ms" aria-label="Currently learning">
+          <div class="now-head">
+            <span class="now-dot"></span>
+            <span class="now-label">Now · Currently learning</span>
+          </div>
+          <div class="now-marquee">
+            <div class="now-track">
+              <span>🛡️ Vulnerability Assessment Labs</span>
+              <span>📦 Hands-on Metasploit Modules</span>
+              <span>🧪 Wireshark Packet Capture Analysis</span>
+              <span>🎨 Designing in Figma — auto-layout</span>
+              <span>⚡ JavaScript fundamentals deeper dive</span>
+              <span>📝 Writing security case studies</span>
+              <!-- duplicate for seamless loop -->
+              <span>🛡️ Vulnerability Assessment Labs</span>
+              <span>📦 Hands-on Metasploit Modules</span>
+              <span>🧪 Wireshark Packet Capture Analysis</span>
+              <span>🎨 Designing in Figma — auto-layout</span>
+              <span>⚡ JavaScript fundamentals deeper dive</span>
+              <span>📝 Writing security case studies</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="hero-showcase">
-        <div class="showcase-card main-photo-card">
-          <img src="assets/screenshots/myPicBig.jpg" alt="Md Jubayer Islam">
+      <div class="hero-visual hero-visual-home anim-fade-up" style="--d:400ms">
+        <div class="profile-frame">
+          <div class="profile-frame-ring" aria-hidden="true"></div>
+          <div class="profile-frame-inner">
+            <img src="assets/screenshots/myPicBig.jpg" alt="Md Jubayer Islam" />
+          </div>
         </div>
 
-        <div class="floating-card top-card">
+        <div class="floating-note note-top">
           <span>Current Focus</span>
           <strong>Cybersecurity Labs</strong>
         </div>
 
-        <div class="floating-card bottom-card">
-          <span>Tools</span>
-          <strong>Nmap · Hydra · Metasploit</strong>
+        <div class="floating-note note-bottom">
+          <span>Skills</span>
+          <strong>Design · Development · Security</strong>
         </div>
       </div>
     </section>
 
     <section class="section" id="journey">
       <div class="section-heading">
-        <span>Career Direction</span>
-        <h2>My journey connects design, development, and cybersecurity.</h2>
+        <span>Career Journey</span>
+        <h2>A portfolio connecting security, design, and development.</h2>
+        <p>
+          I enjoy learning by building projects, documenting my process,
+          and improving both technical and design skills step by step.
+        </p>
       </div>
 
-      <div class="bento-grid">
-        <article class="bento-card large-card">
-          <img src="assets/screenshots/myCover1.jpg" alt="Portfolio cover">
-          <div>
+      <div class="home-grid">
+        <article class="feature-panel large-panel">
+          <div class="panel-image-wrap">
+            <img src="assets/screenshots/myCover1.jpg" alt="Portfolio cover image" />
+          </div>
+          <div class="panel-content">
             <h3>About Me</h3>
             <p>
-              I enjoy learning by building real projects. My focus is growing as a cybersecurity professional
-              while keeping strong foundations in UI/UX and front-end development.
+              My long-term goal is to grow as a cybersecurity professional while keeping
+              a strong foundation in UI/UX design and front-end development.
             </p>
           </div>
         </article>
 
-        <article class="bento-card">
+        <article class="feature-panel">
           <h3>Cybersecurity</h3>
-          <p>Lab-based vulnerability assessment, network scanning, packet analysis, and ethical hacking fundamentals.</p>
+          <p>
+            Vulnerability assessment, network scanning, packet analysis,
+            lab-based practice, and technical documentation.
+          </p>
           <a href="pages/cybersecurity.html">View Section →</a>
         </article>
 
-        <article class="bento-card accent-card">
+        <article class="feature-panel accent-panel">
           <h3>UI/UX Design</h3>
-          <p>Wireframes, visual hierarchy, typography, layout design, and clean product interfaces.</p>
-          <a href="#">Coming Soon →</a>
+          <p>
+            Clean interfaces, visual hierarchy, layout systems, typography,
+            and product thinking.
+          </p>
+          <a href="pages/uiux.html">View Section →</a>
         </article>
 
-        <article class="bento-card">
+        <article class="feature-panel">
           <h3>Development</h3>
-          <p>HTML, CSS, JavaScript, Python, Java, C/C++, and basic Linux command line.</p>
-          <a href="#">Coming Soon →</a>
+          <p>
+            HTML, CSS, JavaScript, Python, Java, C/C++, and basic Linux command line.
+          </p>
+          <a href="pages/development.html">View Section →</a>
         </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span>Quick Overview</span>
+        <h2>What I'm focused on right now.</h2>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <h3>8+</h3>
+          <p>Security Tools</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>3+</h3>
+          <p>Lab Projects</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>3</h3>
+          <p>Main Tracks</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>2025</h3>
+          <p>Portfolio Growth</p>
+        </div>
       </div>
     </section>
 
